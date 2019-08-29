@@ -1,5 +1,9 @@
 /* General Page Style */
 
-h1 {
-    color: purple;
+body {
+    margin: 40px;
+}
+
+p {
+    width: 750px;
 }
