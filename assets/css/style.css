@@ -1,7 +1,8 @@
 /* General Page Style */
 
 body {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 2;
@@ -15,10 +16,21 @@ h1, h2, h3 {
     width: 50%;
 }
 
+/* Option to switch the colored section to the title
+h1 {
+    width: 470px;
+    background-color: rgba(98, 203, 245, 0.4);
+    border-radius: 15px;
+}
+*/
+
 h2 {
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: -20px;
     margin-bottom: 35px;
+    width: 150px;
+    background-color: rgba(98, 203, 245, 0.4);
+    border-radius: 15px;
 }
 
 /* Nav Bar */
@@ -93,11 +105,11 @@ a:hover {
 }
 
 article a:link {
-    color: darksalmon;
+    color: rgb(98, 203, 245);
 }
 
 article a:visited {
-    color: green;
+    color: rgb(55, 111, 133);
 }
 
 p {
