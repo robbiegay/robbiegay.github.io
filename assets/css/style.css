@@ -16,7 +16,9 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.25em;
+    margin-top: -20px;
+    margin-bottom: 35px;
 }
 
 /* Nav Bar */
@@ -47,13 +49,13 @@ li a:hover {
     margin: 1em auto;
     width: 50%;
     height: 70px;
-    /*background-color: aqua;  Used to visually adjust box */
+    /*background-color: aqua; -->  Used to visually adjust box */
     overflow: hidden;
 }
 
 .author-tag img {
     height: 4em;
-    float: left
+    float: left;
 }
 
 #author-name {
@@ -76,13 +78,14 @@ li a:hover {
 article {
     margin: auto;
     width: 50%;
+    /*background-color: antiquewhite;  --> Used to visualize box */
 }
 
 article img {
-    margin: 1em 0;
+    margin: 1em 7vw;
     align-content: center;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
 }
 
 a:hover {
@@ -97,10 +100,17 @@ article a:visited {
     color: green;
 }
 
-/*
 p {
-    display: inline-block;
-    max-width: 50vw;
-    min-width: 25vw;
-    margin: 0 20em;
+    text-align: justify;
 }
+
+
+/*
+    Problems to solve:
+    ---Size and positioning: couldn't get things to allign correctly. Used commands 
+    like [position: relative], and had to manually adjest several elements if I made
+    even small changes. Functional but very sloppy code.
+    ---Images have a good size with a large view port, but scale down very small as 
+    the view port shrinks. Tryed using [min- and max- height/width] but couldn't get 
+    that to work either.
+*/
