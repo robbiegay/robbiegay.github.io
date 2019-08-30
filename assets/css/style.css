@@ -1,9 +1,62 @@
 /* General Page Style */
 
 body {
-    margin: 40px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 2;
 }
 
+/* Headings */
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0.5em auto;
+    width: 50%;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+/* Author Tag */
+
+.author-tag {
+    margin: auto;
+    width: 50%;
+}
+
+.author-tag img {
+    height: 4em;
+    display: inline-block;
+}
+
+.author-tag p {
+    display: inline-block;
+    color: dimgray;
+}
+
+.author-tag #author-name {
+    display: inline-block;
+    font-size: 2em;
+}
+
+/* Article */
+
+article {
+    margin: auto;
+    width: 50%;
+}
+
+article img {
+    margin: 1em 0;
+    align-content: center;
+}
+
+/*
 p {
-    width: 750px;
+    display: inline-block;
+    max-width: 50vw;
+    min-width: 25vw;
+    margin: 0 20em;
 }
