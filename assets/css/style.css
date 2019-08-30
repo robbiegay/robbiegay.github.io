@@ -19,26 +19,56 @@ h2 {
     font-size: 1em;
 }
 
+/* Nav Bar */
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    width: 50px;
+    background-color: lightgray;
+    border: 1px solid darkslategrey;
+    position: fixed;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+}
+
+li a:hover {
+    background-color: darkgrey;
+}
+
 /* Author Tag */
 
 .author-tag {
-    margin: auto;
+    margin: 1em auto;
     width: 50%;
+    height: 70px;
+    /*background-color: aqua;  Used to visually adjust box */
+    overflow: hidden;
 }
 
 .author-tag img {
     height: 4em;
-    display: inline-block;
+    float: left
 }
 
-.author-tag p {
-    display: inline-block;
+#author-name {
     color: dimgray;
+    position: relative;
+    top: -46px;
+    left: 5px;
+    font-size: 2em;
 }
 
-.author-tag #author-name {
-    display: inline-block;
-    font-size: 2em;
+#post-date {
+    color: dimgray;
+    position: relative;
+    top: -91px;
+    left: 70px;
 }
 
 /* Article */
@@ -51,6 +81,20 @@ article {
 article img {
     margin: 1em 0;
     align-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+article a:link {
+    color: darksalmon;
+}
+
+article a:visited {
+    color: green;
 }
 
 /*
