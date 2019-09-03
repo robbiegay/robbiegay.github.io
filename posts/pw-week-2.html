@@ -19,43 +19,256 @@
         </heading>
         
         <article>
+
+            <!--|| Blog Post Intro -->
+
             <p>
                 I’m writing this late on a Labor Day Monday night. My 
                 girlfriend is currently in flight back from NYC where 
                 she saw a Jonas Brother Concert (not super jealous), 
                 and ate at a Michelin Starred Chinese restaurant 
                 (<strong>super</strong> jealous). My Labor Day Weekend 
-                <em>was</em> pretty good (thanks for asking) — I spent 
+                was <em>pretty</em> good (thanks for asking) — I spent 
                 a decent amount of time reading and reviewing HTML and 
-                CSS but did manage to at least stop by my neighbor’s new 
-                pool each of the 3 long-weekend days — bringing my total 
-                summer pool count up to 4!
-            </p>
-            <img class="inline" src="../assets/img/cafe-china-nyc.JPG" alt="Food from Cafe China, NYC">
-            <img class="inline" src="../assets/img/labor-day-pool.JPG" 
-                alt="A nice picture of my legs and water bottle at my neighbor's pool">
-            <p>
-                This weekend wraps up the second week of Coding Bootcamp 
-                Prework. The focus of this week was an introduction to 
-                HTML and CSS. HTML stands for hypertext markup language, 
-                it’s not a coding language (it’s a markup language), 
-                although if you looked at a page of html, you might be fooled
-            </p>
-            <img src="" alt="">
-            <p>
-                CSS stands for cascading style sheets. HTML provides 
-                the structure of your webpage and CSS gives it it’s style. 
-                Here’s a great image I found comparing the two:
-            </p>
-            <img src="" alt="">
-            <p>
-                We covered a range of basic html and css topics, and 
-                although I would love to write a post covering <em>everything</em> 
-                we learned, I would also love to go to sleep at some point. So 
-                instead, here is a very basic introduction to HTML/CSS!
+                CSS but did manage to stop by my neighbor’s new pool 
+                each of the 3 holiday weekend days!
             </p>
 
+            <figure>
+                <img class="inline" src="../assets/img/cafe-china-nyc.JPG" 
+                    alt="An image of Chinese food. Photo Credit: Anna B.">
+                <figcaption>Food from Cafe China, NYC</figcaption>
+                <img class="inline" src="../assets/img/labor-day-pool.JPG" 
+                    alt="A nice picture of my legs and water bottle at my neighbor's pool">
+                <figcaption>Relaxing by the pool</figcaption>
+            </figure>
+
+            <p>
+                This weekend wraps up the second week of Coding Bootcamp 
+                Prework. The focus of this week was an introduction to HTML 
+                and CSS. HTML stands for hypertext markup language. HTML is 
+                not a coding language (it’s a markup language), although if 
+                you looked at a page of HTML, you might be fooled.
+            </p>
+
+            <figure>
+                <img src="../assets/img/html-looks-like-code.png" 
+                    alt="HTML looks like code. It's actually a markup language">
+                <figcaption>not code, don't get fooled</figcaption>
+            </figure>
+
+            <p>
+                CSS stands for cascading style sheets. HTML provides the 
+                structure of your webpage and CSS gives it it’s style. HTML 
+                is like the frame of your house, CSS is the doors, windows, 
+                paint, etc:
+            </p>
+
+            <figure>
+                <img src="../assets/img/html-vs-css.png" alt="Visual analogy of HTML vs CSS">
+                <figcaption>HTML is like the frame of a house; CSS adds style.</figcaption>
+            </figure>
+            
+            <p>
+                We covered a range of basic HTML and CSS topics, and although 
+                I would love to write a post covering <em>everything</em> we 
+                learned, I would also love to go to sleep at some point. 
+                Instead, here is a very basic introduction to HTML/CSS!
+            </p>
+
+            <!--|| HTML Intro -->
+
             <h2>HTML: A very basic introduction</h2>
+
+            <p>
+                The basic building block of HTML is the element. An element 
+                is declared using opening (<element>) and closing (</element>) 
+                tags. Between said tags, lies the content of the element.
+            </p>
+
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+
+            <p>
+                The above example uses the <code>&lt;p&gt;</code> tag. “p” 
+                stands for paragraph. A paragraph is the basic holding element 
+                for the body of your text. The text you are reading now is 
+                contained within a <code>&lt;p&gt;</code> tag. You can find 
+                a whole list of other tags on the 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" 
+                    title="MDN HTML Reference">documentation site</a>.
+            </p>
+
+            <figure>
+                <img src="../assets/img/current-text.png" alt="An image of some HTML">
+                <figcaption>The HTML of the above paragraph</figcaption>
+            </figure>
+
+            <p>
+                Elements are nested within a hierarchy in HTML. Below is a 
+                very basic layout for a HTML webpage:
+            </p>
+
+            <figure>
+                    <img src="../assets/img/html-example.png" 
+                        alt="An image of some basic HTML">
+                    <figcaption>Here is an example of basic HTML</figcaption>
+                </figure>
+            
+            <p>
+                A rundown of what is going on here:
+                <ul>
+                    <li>
+                        <code>&lt;!DOCTYPE html&gt;</code> this declares to 
+                        the muses of the internet that the below information 
+                        is a HTML document, and to process that information 
+                        accordingly.
+                    </li>
+                    <li>
+                        <code>&lt;html&gt;</code> This is the opening tag that 
+                        begins the actual HTML document. Notice at the bottom 
+                        of our markup is <code>&lt;/html&gt;</code> this 
+                        closes the markup. This level is sometimes called the 
+                        root. 
+                    </li>
+                        <ul>
+                            <li>
+                                Although not required, I have also declared 
+                                the language (“lang”) of our webpage: it is 
+                                written in English (“en”), the US dialect.
+                            </li>
+                        </ul>
+                    <li>
+                        <code>&lt;head&gt;</code> The head contains the 
+                        elements that the end user does not need to see, 
+                        but that the machines find useful. 
+                    </li>
+                        <ul>
+                            <li>
+                                Here we have a metadata tag “meta” that 
+                                declares the charset (set of characters 
+                                that the browser can interpret). Here we 
+                                have defined it as utf-8, which allows us 
+                                to use virtually all 1.1 million characters 
+                                and symbols in any world language. You can 
+                                <a href="https://en.wikipedia.org/wiki/UTF-8" 
+                                    title="utf-8 Wikipedia Page">
+                                    read more about utf-8 here</a>.
+                            </li>
+                            <li>
+                                <code>&lt;title&gt;</code> This is the title 
+                                of the webpage. It is useful for search 
+                                engines (it is the name that appears in big 
+                                title letters in search results). It also 
+                                appears as the title of the window or tab 
+                                when on the site. Additionally, it is the 
+                                default name when you try to bookmark the 
+                                page (for example, bookmarking this 
+                                <em>awesome</em> blog would give you 
+                                the default title "Prework Week 2")
+                            </li>
+                            <li>
+                                <code>&lt;/head&gt;</code> notice that we 
+                                then close the head with a closing tag.
+                            </li>
+                        </ul>
+                    <li>
+                        &lt;body&gt; The body is where the main content of our 
+                        webpage lives. The only content that we have here is 
+                        “hello world” (<a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" 
+                            title="'Hello, world!' Wikipedia Page">
+                            click for context about the hello world convention</a>).
+                    </li>
+                    <li>
+                        We then close out our <code>&lt;body&gt;</code> and 
+                        close out our <code>&lt;html&gt;</code>
+                    </li>
+                </ul>
+                Notice how the <code>&lt;p&gt;</code> opening and closing tags 
+                are on the same line, but the <code>&lt;html&gt;</code> tags 
+                are on different lines (and indentations)? Whitespace, or the 
+                spacing of the HTML document, doesn’t matter to the web 
+                browser. We could put everything on one line! Rather, it 
+                matters to us. Laying things out in a human-readable manner 
+                is handy for anyone working with computers. 
+                <br><br>
+                Here is the end result of our HTML. Things will look a little sparse, but we did a good job setting up a basic layout:
+            </p>
+
+            <figure>
+                <img src="../assets/img/html-result.png" 
+                    alt="An image of our test website">
+                <figcaption>This is what our test website looks like!</figcaption>
+                </figure>
+
+            <!--|| CSS Intro -->
+
+            <h2>CSS: Another brief introduction</h2>
+
+            <p>
+                We can add CSS to our example HTML to give it some style!
+                <br><br>
+                First, we need to link our CSS file in the HTML markup, so 
+                that the web browser knows where to find it. If we don’t tell 
+                the computer where to look, it would be like telling a human, 
+                “fetch me a glass of water”. Your friend might not know where 
+                you keep you cups. Linking to the stylesheet is like saying 
+                “fetch me a glass of water, the glasses are in the cabinet 
+                next to the fridge.”                    
+            </p>
+
+            <figure>
+                    <img src="../assets/img/html-add-stylesheet.png" 
+                        alt="An image showing how to link to a CSS Stylesheet">
+                    <figcaption>Linking to a CSS Stylesheet</figcaption>
+            </figure>
+
+            <p>
+                CSS is formatted a little different than HTML.  A CSS rule or 
+                ruleset tells the browser how to style various HTML elements. 
+                On the left, are the selectors, these tell HTML which part of 
+                the page to apply the style rule to. 
+            </p>
+
+            <figure>
+                    <img src="../assets/img/" alt="">
+                    <figcaption></figcaption>
+            </figure>
+
+            <p>
+                A CSS example might look like:
+                <br><br>
+                <code>.robbie {color: purple}</code>
+                <br><br>
+                In computer speak, this takes the class “<code>robbie</code>” 
+                (an endstop “<code>.</code>” before a word makes it apply to a 
+                whole class of elements), and turns it/him purple. In human 
+                speak the selector <code>.robbie</code> would sound like “make 
+                robbie…” and the declaration <code>{color: purple}</code> 
+                would sound like “…become purple colored”.
+                <br><br>
+                A final example of CSS will be to apply it to the example HTML we used before.
+                <br><br>
+                <code><pre>
+                    p {
+                        color: lightsalmon;
+                        border: 1px dotted green
+                    }
+                </pre></code>
+                <br><br>
+                We have told the web browser to make all &lt;p&gt; elements 
+                the color “<code>lightsalmon</code>” and to add a 
+                "<code>1px</code>" (pixel) wide, dotted, green-colored border 
+                around them.  
+            </p>
+
+
+            <figure>
+                    <img src="../assets/img/" alt="">
+                    <figcaption></figcaption>
+            </figure>
         </article>
     </body>
 
