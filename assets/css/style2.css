@@ -24,3 +24,12 @@ h1 {
 p {
     text-align: justify;
 }
+
+img {
+    height: 450px;
+}
+
+.inline {
+    display: inline;
+    padding: 10px;
+}
