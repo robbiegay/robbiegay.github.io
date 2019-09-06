@@ -133,12 +133,8 @@ p {
 }
 
 
-/*
-    Problems to solve:
-    ---Size and positioning: couldn't get things to allign correctly. Used commands 
-    like [position: relative], and had to manually adjest several elements if I made
-    even small changes. Functional but very sloppy code.
-    ---Images have a good size with a large view port, but scale down very small as 
-    the view port shrinks. Tryed using [min- and max- height/width] but couldn't get 
-    that to work either.
-*/
+/* Page Styles - trying to set the first child of .projects li to bold*/
+
+.projects > li {
+    font-style: bold;
+}

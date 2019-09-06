@@ -7,7 +7,7 @@ body {
     font-size: 16px;
     line-height: 2;
 }
-
+ 
 /* Nav Bar */
 
 nav ul {
@@ -44,7 +44,7 @@ article {
     article {
         margin: 50px auto;
         margin-left: 116px;
-        /*background-color: red;*/
+        background-color: red;
     }
     h1 {
         margin-left: 125px;
