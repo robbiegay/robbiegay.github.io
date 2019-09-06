@@ -124,6 +124,12 @@ figcaption {
     text-align: center;
 }
 
+/* Trying to change the font of link in figcaptions
+article figure .minimalLink {
+    text-decoration: none;
+}
+*/
+
 .imgBorder {
     border: 10px solid rgba(102, 102, 102, 0.24);
     border-radius: 10px;
