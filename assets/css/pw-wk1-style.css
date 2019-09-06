@@ -1,4 +1,4 @@
-/* Site Wide Style */
+/* General Page Style */
 
 body {
     margin-top: 10px;
@@ -35,23 +35,23 @@ h2 {
 
 /* Nav Bar */
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 10px;
     margin: 0;
-    width: 70px;
+    width: 50px;
     background-color: lightgray;
     border: 1px solid darkslategrey;
     position: fixed;
     overflow: auto;
 }
 
-nav li a {
+li a {
     display: block;
     color: black;
 }
 
-nav li a:hover {
+li a:hover {
     background-color: darkgrey;
 }
 
@@ -88,26 +88,10 @@ nav li a:hover {
 /* Article */
 
 article {
-    width: 50vw;
-    min-width: 600px;
     margin: auto;
-    /*background-color: yellow;*/
+    width: 50%;
+    /*background-color: antiquewhite;  --> Used to visualize box */
 }
-
-/* For mobile viewing */
-@media only screen and (max-width: 425px) {
-    article {
-        width: 100%;
-        padding: 10px;
-        margin: 0px;
-        /*background-color: pink;*/
-    }
-    h1 {
-        width: 100%;
-        margin-left: 125px;
-    }
-}
-
 
 article img {
     margin: 1em 7vw;

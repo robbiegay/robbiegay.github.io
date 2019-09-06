@@ -1,0 +1,142 @@
+/* Site-wide Styles */
+
+body {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* Nav Bar */
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    width: 70px;
+    background-color: lightgray;
+    border: 1px solid darkslategrey;
+    position: fixed;
+    overflow: auto;
+}
+
+nav li a {
+    display: block;
+    color: black;
+}
+
+nav li a:hover {
+    background-color: darkgrey;
+}
+
+/* Main Article Sizing */
+
+article {
+    width: 50vw;
+    min-width: 600px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+/* For when a desktop screen is resized smaller */
+@media (max-width: 850px) {
+    article {
+        margin: 50px auto;
+        margin-left: 116px;
+        /*background-color: red;*/
+    }
+    h1 {
+        margin-left: 125px;
+    }
+}
+
+/* For mobile viewing */
+@media only screen and (max-width: 425px) {
+    article {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+        /*background-color: pink;*/
+    }
+}
+
+/*|| Text Styles */
+
+h1 {
+    text-align: center;
+    display: block;
+    /*background-color: gold;*/
+}
+
+#pw1-subheading {
+    font-size: 1em;
+    margin-top: -20px;
+    margin-bottom: 35px;
+    width: 150px;
+    background-color: rgba(98, 203, 245, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+/*|| Image Styles */
+
+img {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+/*|| Hyperlink Styles */
+
+a:hover {
+    text-decoration: none;
+}
+
+article a:link {
+    color: rgb(98, 203, 245);
+}
+
+article a:visited {
+    color: rgb(55, 111, 133);
+}
+
+
+
+
+
+
+
+.author-tag {
+    margin: 1em auto;
+    width: 50%;
+    height: 70px;
+    background-color: aqua; -->  Used to visually adjust box 
+    overflow: hidden;
+}
+
+.author-tag img {
+    height: 4em;
+    width: 4em;
+    float: left;
+    display: inline;
+}
+
+#author-name {
+    color: dimgray;
+    font-size: 2em;
+    position: relative;
+    top: -20%;
+    right: 29%;
+}
+
+#post-date {
+    color: dimgray;
+    position: relative;
+    top: -91px;
+    left: 70px;
+}
