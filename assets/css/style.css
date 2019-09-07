@@ -154,6 +154,12 @@ article img {
     left: -65px;
 }
 
+blockquote {
+    background-color: rgba(102, 102, 102, 0.116);
+    padding: 15px;
+    border-radius: 10px;
+}
+
 a:hover {
     text-decoration: none;
 }
