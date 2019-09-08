@@ -124,7 +124,7 @@ article {
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) { /* Moves the article down when the nav bar risks overlapping */
     .moveDown {
         margin-top: 125px;
     }
