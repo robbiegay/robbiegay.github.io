@@ -124,6 +124,12 @@ article {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .moveDown {
+        margin-top: 125px;
+    }
+}
+
 code {
     background-color: rgba(207, 207, 207, 0.4);
     padding: 2px;
