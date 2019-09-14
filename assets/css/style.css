@@ -91,6 +91,7 @@ article {
     width: 50vw;
     min-width: 600px;
     margin: auto;
+    /*text-align: center;*/
     /*background-color: yellow;*/
 }
 
@@ -203,4 +204,13 @@ p {
 
 .projects > li {
     font-style: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.frame {
+    border: 1px solid black;
+    width: 100%;
 }
