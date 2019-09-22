@@ -1,62 +1,124 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Blog Posts</title>
-        <link rel="stylesheet" href="assets/css/style-prebootstrap.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    </head>
 
-    <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../posts.html">Posts</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="https://github.com/robbiegay" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/robbie-gay-3a38aa72/" target="_blank">LinkedIn</a></li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Blog Posts</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank"
+                        href="https://www.linkedin.com/in/robbie-gay-3a38aa72/">LinkedIn</a>
+                </li>
             </ul>
+        </div>
+    </nav>
+
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <heading>
+                    <h1 class="mt-5 py-5 text-center">Blog Posts</h1>
+                </heading>
+
+                <article>
+                    <p>
+                        Here you can find all of the posts for my blog:
+                        <ul>
+                            <li>Bootcamp Prework</li>
+                            <!-- --\> arrows used stylistically below, ignore the fact that they are colored red by VS Code -->
+                            <ul>
+                                <li>
+                                    <time datetime="2019-08-30">August 30<sup>th</sup>, 2019</time>
+                                    --> <a href="posts/pw-week-1.html" title="Prework Week 1 Blog Post">
+                                        Prework Week 1: Git and Github</a>
+                                </li>
+                                <li>
+                                    <time datetime="2019-09-02">September 2<sup>nd</sup>, 2019</time>
+                                    --> <a href="posts/pw-week-2.html" title="Prework Week 2 Blog Post">
+                                        Prework Week 2: HTML, CSS, and Pseudo Code</a>
+                                </li>
+                                <li>
+                                    <time datetime="2019-09-07">September 7<sup>th</sup>, 2019</time>
+                                    --> <a href="posts/pw-week-3.html" title="Prework Week 3 Blog Post">
+                                        Prework Week 3: JavaScript</a>
+                                </li>
+                                <li>
+                                    <time datetime="2019-09-13">September 13<sup>th</sup>, 2019</time>
+                                    --> <a href="posts/pw-week-4.html" title="Prework Week 4 Blog Post">
+                                        Prework Week 4: More JavaScript</a>
+                                </li>
+                            </ul>
+                            <li>Bootcamp</li>
+                            <ul>
+                                <li>Week 1 Post (Coming Soon)</li>
+                            </ul>
+                        </ul>
+                    </p>
+
+                    <!-- Gives white space at the bottom -->
+                    <br><br><br><br><br><br><br>
+                    
+                </article>
+            </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
         </nav>
-        
-        <heading>
-             <h1>Blog Posts</h1>
-        </heading>
-       
-        <article class="moveDown">
-            <p>
-            Here you can find all of the posts for my blog:
-            <ul>
-                <li>Bootcamp Prework</li>
-                <ul>
-                    <li>
-                        <time datetime="2019-08-30">August 30<sup>th</sup>, 2019</time> 
-                        --> <a href="posts/pw-week-1.html" title="Prework Week 1 Blog Post">
-                        Prework Week 1: Git and Github</a>
-                    </li>
-                    <li>
-                        <time datetime="2019-09-02">September 2<sup>nd</sup>, 2019</time> 
-                        --> <a href="posts/pw-week-2.html" title="Prework Week 2 Blog Post">
-                        Prework Week 2: HTML, CSS, and Pseudo Code</a>
-                    </li>
-                    <li>
-                        <time datetime="2019-09-07">September 7<sup>th</sup>, 2019</time> 
-                        --> <a href="posts/pw-week-3.html" title="Prework Week 3 Blog Post">
-                        Prework Week 3: JavaScript</a>
-                    </li>
-                    <li>
-                        <time datetime="2019-09-13">September 13<sup>th</sup>, 2019</time> 
-                        --> <a href="posts/pw-week-4.html" title="Prework Week 4 Blog Post">
-                        Prework Week 4: More JavaScript</a>
-                    </li>
-                </ul>
-                <!--<li>Bootcamp</li>
-                <ul>
-                    <li>Week 1 Post</li>
-                </ul>
-            </ul>
-        </p>
-        </article>
+    </footer>
 
-    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

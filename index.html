@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Robbie's Bootcamp Blog Homepage</title>
-        <link rel="stylesheet" href="assets/css/style-prebootstrap.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../posts.html">Posts</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="https://github.com/robbiegay" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/robbie-gay-3a38aa72/" target="_blank">LinkedIn</a></li>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Robbie's Bootcamp Blog Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank"
+                        href="https://www.linkedin.com/in/robbie-gay-3a38aa72/">LinkedIn</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <heading>
-            <h1>Blog Homepage</h1>
-        </heading>
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 
-        <article class="moveDown">
-            <p>
-                Welcome to my blog! Currently, I will be using this space to 
-                post updates as I navigate through Awesome Inc U's 
-                <a href="https://www.awesomeincu.com/bootcamp/" 
-                title="Awesome Inc U's Web Dev Bootcamp">Fall 2019 Web 
-                Developer Bootcamp</a>. You can check out my previous 
-                <a href="../posts.html">posts</a>, 
-                <a href="../projects.html">projects</a>, or various other 
-                content by using the Nav Bar to your left. Or below, you 
-                can play a simple drawing game that I created!
-            </p>
-            <h3>Rainbow Sketchpad Game</h3>
-            <div class="center">
-                <iframe class="frame" title="Rainbow Sketchpad" 
-                height="515" src="https://robbiegay.github.io/rainbow-sketchpad/">
-                    </iframe>
+                <heading>
+                    <h1 class="mt-5 py-5 text-center">Blog Homepage</h1>
+                </heading>
+
+                <article class="text-justify">
+                    <p>
+                        Welcome to my blog! Currently, I will be using this space to
+                        post updates as I navigate through Awesome Inc U's
+                        <a href="https://www.awesomeincu.com/bootcamp/" title="Awesome Inc U's Web Dev Bootcamp">Fall
+                            2019 Web
+                            Developer Bootcamp</a>. You can check out my previous
+                        <a href="../posts.html">posts</a>,
+                        <a href="../projects.html">projects</a>, or various other
+                        content by using the Nav Bar to your left. Or below, you
+                        can play a simple drawing game that I created!
+                    </p>
+                    <h3 class="text-center">Rainbow Sketchpad Game</h3>
+                    <div class="border embed-responsive embed-responsive-4by3 mb-4">
+                        <iframe class="embed-responsive-item" title="Rainbow Sketchpad" height="515"
+                            src="https://robbiegay.github.io/rainbow-sketchpad/">
+                        </iframe>
+                    </div>
+                    <p>
+                        Instructions: Use your mouse to draw rainbow-colored lines! Click anywhere
+                        in the game to reset (delete) your drawing. You can also check out
+                        the code for this project on
+                        <a href="https://github.com/robbiegay/rainbow-sketchpad"
+                            title="Rainbow Sketchpad Github Repo">Github</a>.
+                        (Note: Likely
+                        will not work on mobile or touchscreens.)
+                    </p>
+
+                </article>
             </div>
-            <p>
-                Instructions: Use your mouse to draw rainbow-colored lines! Click anywhere 
-                in the game to reset (delete) your drawing. You can also check out 
-                the code for this project on 
-                <a href="https://github.com/robbiegay/rainbow-sketchpad" 
-                title="Rainbow Sketchpad Github Repo">Github</a>. (Note: Likely 
-                will not work on mobile or touchscreens.)
-            </p>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
 
-        </article>
-    
-    </body>
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
+        </nav>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
