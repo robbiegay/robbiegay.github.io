@@ -1,150 +1,426 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <title>Projects</title>
-        <link rel="stylesheet" href="assets/css/style-prebootstrap.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../posts.html">Posts</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="https://github.com/robbiegay" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/robbie-gay-3a38aa72/" target="_blank">LinkedIn</a></li>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Projects</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank"
+                        href="https://www.linkedin.com/in/robbie-gay-3a38aa72/">LinkedIn</a>
+                </li>
             </ul>
+        </div>
+    </nav>
+
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <heading>
+                    <h1 class="mt-5 pt-5 pb-3 text-center">Projects</h1>
+                </heading>
+
+                <article class="text-justify">
+                    <p>Here you can find a list of web dev projects that I have been working on recently:</p>
+                    <br>
+                    <h3>Prework Weeks 1-4:</h3>
+                    <p class="text-secondary">Git, GitHub, HTML, CSS, JavaScript</p>
+
+                    <div class="accordion" id="prework">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Prework Week 1 (8/19/19 - 8/25/19)
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#prework">
+                                <div class="card-body">
+                                    We spent Prework Week 1 learning about Git and GitHub. I don't have any
+                                    projects to share from this first week, but you can read more about
+                                    what we did in my <a href="posts/pw-week-1.html">Prework Week 1 Blog Post</a>!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Prework Week 2 (8/26/19 - 9/1/19)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#prework">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://robbiegay.github.io/Mark-Up-Letter/">Marking up a letter
+                                                using HTML</a>
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                Structured a letter using appropriate HTML tags. Started with overall
+                                                document tags
+                                                ("<code>&lt;!DOCTYPE html&gt;</code>", "<code>&lt;html&gt;</code>",
+                                                "<code>&lt;head&gt;</code>", and "<code>&lt;body&gt;</code>"), and then
+                                                added various block level ("<code>&lt;h1&gt;</code>",
+                                                "<code>&lt;p&gt;</code>", etc)
+                                                and inline semantics ("<code>&lt;strong&gt;</code>",
+                                                "<code>&lt;em &gt;</code>",
+                                                etc).
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/Mark-Up-Letter">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/PageStructure/">Manipulating page
+                                                structure using
+                                                HTML</a></li>
+                                        <ul>
+                                            <li>
+                                                Creating and styling a header, navigation menu, main content section,
+                                                welcome text,
+                                                image sidebar, and footer.
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/PageStructure">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/css-gamer-card/">Creating a Gamer Card
+                                                using
+                                                CSS</a></li>
+                                        <ul>
+                                            <li>
+                                                Wrote CSS rules that altered the color, shape and alignment of a Gamer
+                                                Card.
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/css-gamer-card">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Prework Week 3 (9/2/19 - 9/8/19)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#prework">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://robbiegay.github.io/splash-page/">Building Resizable
+                                                Websites using
+                                                HTML</a></li>
+                                        <ul>
+                                            <li>
+                                                Created different resolutions of project images. Embedded a YouTube
+                                                video onto the
+                                                page.
+                                                Created responsive images using “<code>src</code>”, “<code>alt</code>”,
+                                                “<code>srcset</code>”,
+                                                and “<code>sizes</code>” attributes as well as creating an Art Directed
+                                                element
+                                                using
+                                                <code>&lt;picture&gt;</code>.
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/splash-page">GitHub Repo</a></li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/silly-story/">Creating a Silly Story
+                                                Generator
+                                                using JavaScript</a></li>
+                                        <ul>
+                                            <li>
+                                                Took a Silly Story string and inserted various silly people/events which
+                                                we pulled
+                                                from two different arrays. Also added functionality to switch between
+                                                US, and UK
+                                                measurement
+                                                systems (as well as a third "Easter Egg" unit of measurement, found via
+                                                hovering
+                                                your mouse over it). Additionally, added a Typewriter Effect that made
+                                                use of a
+                                                loop which would print one letter at a time before waiting and moving on
+                                                to the
+                                                next letter.
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator">Project
+                                                    Prompt</a></li>
+                                            </li>
+                                            <li><a href="https://github.com/robbiegay/silly-story">GitHub Repo</a></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Prework Week 4 (9/9/19 - 9/15/19)
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#prework">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://robbiegay.github.io/image-gallery/">Image Gallery</a></li>
+                                        <ul>
+                                            <li>
+                                                Created an image gallery that allows the user to click through 5 image
+                                                thumbnails
+                                                which, when selected, enlarge and replace the previously displayed
+                                                image. Also
+                                                included a button which allows users to "lighten" or "darken" the image
+                                                — a function
+                                                similar
+                                                to those included in many basic photo display programs.
+                                                The main problem that I had with getting this software to work involved
+                                                figuring out
+                                                how to use <code>event.target</code> in JavaScript to select each image
+                                                as it was
+                                                created in a loop. Otherwise, the loop would complete and replace the
+                                                currently
+                                                targeted image with the last image + 1 (i.e. the loop ends on pic5.jpg,
+                                                this
+                                                would attempt to target a fictional pic6.jpg).
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/image-gallery">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/digital-clock/">Digital Clock</a></li>
+                                        <ul>
+                                            <li>
+                                                Created a digital clock interface that tells the current time. Included
+                                                button to
+                                                switch
+                                                between Military (default) and Civil time.
+                                            </li>
+                                            <li><a
+                                                    href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/digital-clock.md">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/digital-clock">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/countdown-timer/">Countdown Timer</a>
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                Created a timer that counts down to a user-inputted date and time. The
+                                                display
+                                                counts down in
+                                                units of years, days, hours, minutes, and seconds. When that date and
+                                                time is
+                                                reached, the display reads
+                                                "DONE!!!" and a "reset" button appears to allow the user to initiate a
+                                                new
+                                                countdown.
+                                            </li>
+                                            <li><a
+                                                    href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/countdown-timer.md">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/countdown-timer">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/mind-reader/">Mind Reader</a></li>
+                                        <ul>
+                                            <li>
+                                                This program can read your mind!! Seriously, try it out. The computer
+                                                will guide you
+                                                through a series of 4 questions and will then be able to tell you the
+                                                symbol you
+                                                were
+                                                thinking of. Uses some sort of cutting-edge Bluetooth waves to read your
+                                                mind (or
+                                                something
+                                                like that..)
+                                            </li>
+                                            <li><a
+                                                    href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/mind-reader.md">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/mind-reader">GitHub Repo</a></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bootcamp Weeks 1-4 -->
+                    <br>
+                    <h3>Bootcamp Weeks 1-4: Front End</h3>
+                    <p class="text-secondary">JavaScript, Bootstrap, React</p>
+
+                    <!-- Added a bottom border because it wasn't appearing. May be able to remove once other items are added -->
+                    <div class="accordion border-bottom" id="bootcamp1">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Bootcamp Week 1 (9/16/19 - 9/22/19)
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#bootcamp1">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><a href="https://robbiegay.github.io/campaign-website/">
+                                            Created a Mock Campaign Website</a></li>
+                                        <ul>
+                                            <li>
+                                                For this assignment, we were tasked with creating a mock campaign 
+                                                website for a fictional character. I chose Chidi Anagonye from the 
+                                                American Comedy series "The Good Place." The goal was to create a 
+                                                responsive, mobile-first website using the Bootstrap frame work. 
+                                                Switching to Bootstrap from vanilla CSS was like being given superpowers. 
+                                                I was able to do things with just a word or two of Bootstrap that I might 
+                                                not have been able to do with 50 lines of CSS.
+                                            </li>
+                                            <li><a
+                                                    href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/campaign-website.md">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/campaign-website">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                        <li><a href="https://robbiegay.github.io/bouncing-balls/">Bouncing Balls
+                                                Game</a></li>
+                                        <ul>
+                                            <li>
+                                                Now that we've looked at Bootstrap, we are going to be moving back into 
+                                                JavaScript for the next two weeks. This project involved using JavaScript 
+                                                objects to create a Bouncing Balls game.
+                                            </li>
+                                            <li><a
+                                                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Adding_bouncing_balls_features">Project
+                                                    Prompt</a></li>
+                                            <li><a href="https://github.com/robbiegay/bouncing-balls">GitHub Repo</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br><br><br><br>
+
+                </article>
+            </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
         </nav>
+    </footer>
 
-        <heading>
-            <h1>Projects</h1>
-        </heading>
 
-        <article class="moveDown">
-            <p>Here you can find a list of web dev related projects that I have created recently:</p>
-            <ul class="projects">
-                <li>Prework Week 1 (8/19/19 - 8/25/19):</li>
-                <ul>
-                    <li>We spent Prework Week 1 learning about Git and GitHub. I don't have any projects to share from
-                        this first week, but you can read more about what we did in my <a href="posts/pw-week-1.html">Prework Week 1 Blog Post</a>!
-                    </li>
-                </ul>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-                <li>Prework Week 2 (8/26/19 - 9/1/19):</li>
-                <ul>
-                    <li><a href="https://robbiegay.github.io/Mark-Up-Letter/">Marking up a letter using HTML</a></li>
-                    <ul>
-                        <li>
-                            Structured a letter using appropriate HTML tags. Started with overall document tags 
-                            ("<code>&lt;!DOCTYPE html&gt;</code>", "<code>&lt;html&gt;</code>", 
-                            "<code>&lt;head&gt;</code>", and "<code>&lt;body&gt;</code>"), and then 
-                            added various block level ("<code>&lt;h1&gt;</code>", "<code>&lt;p&gt;</code>", etc) 
-                            and inline semantics ("<code>&lt;strong&gt;</code>", "<code>&lt;em &gt;</code>", etc).
-                        </li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/Mark-Up-Letter">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/PageStructure/">Manipulating page structure using HTML</a></li>
-                    <ul>
-                        <li>
-                            Creating and styling a header, navigation menu, main content section, welcome text, image sidebar, and footer.
-                        </li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/PageStructure">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/css-gamer-card/">Creating a Gamer Card using CSS</a></li>
-                    <ul>
-                        <li>
-                            Wrote CSS rules that altered the color, shape and alignment of a Gamer Card.
-                        </li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/css-gamer-card">GitHub Repo</a></li>
-                    </ul>
-                </ul>
+</body>
 
-                <li>Prework Week 3 (9/2/19 - 9/8/19):</li>
-                <ul>
-                    <li><a href="https://robbiegay.github.io/splash-page/">Building Resizable Websites using HTML</a></li>
-                    <ul>
-                        <li>
-                            Created different resolutions of project images. Embedded a YouTube video onto the page. 
-                            Created responsive images using “<code>src</code>”, “<code>alt</code>”, “<code>srcset</code>”, 
-                            and “<code>sizes</code>” attributes as well as creating an Art Directed element using 
-                            <code>&lt;picture&gt;</code> .
-                        </li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Mozilla_splash_page">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/splash-page">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/silly-story/">Creating a Silly Story Generator using JavaScript</a></li>
-                    <ul>
-                        <li>
-                            Took a Silly Story string and inserted various silly people/events which we pulled 
-                            from two different arrays. Also added functionality to switch between US, and UK measurement 
-                            systems (as well as a third "Easter Egg" unit of measurement, found via hovering 
-                            your mouse over it). Additionally, added a Typewriter Effect that made use of a 
-                            loop which would print one letter at a time before waiting and moving on to the 
-                            next letter.
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator">Project Prompt</a></li>
-                        </li>
-                        <li><a href="https://github.com/robbiegay/silly-story">GitHub Repo</a></li>
-                    </ul>
-                </ul>
-                <li>Prework Week 4 (9/9/19 - 9/15/19)</li>
-                <ul>
-                    <li><a href="https://robbiegay.github.io/image-gallery/">Image Gallery</a></li>
-                    <ul>
-                        <li>
-                        Created an image gallery that allows the user to click through 5 image thumbnails 
-                        which, when selected, enlarge and replace the previously displayed image. Also 
-                        included a button which allows users to "lighten" or "darken" the image — a function similar  
-                        to those included in many basic photo display programs. 
-                        The main problem that I had with getting this software to work involved figuring out 
-                        how to use <code>event.target</code> in JavaScript to select each image as it was 
-                        created in a loop. Otherwise, the loop would complete and replace the currently 
-                        targeted image with the last image + 1 (i.e. the loop ends on pic5.jpg, this 
-                        would attempt to target a fictional pic6.jpg).
-                        </li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Image_gallery">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/image-gallery">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/digital-clock/">Digital Clock</a></li>
-                    <ul>
-                        <li>
-                        Created a digital clock interface that tells the current time. Included button to switch 
-                        between Military (default) and Civil time.
-                        </li>
-                        <li><a href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/digital-clock.md">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/digital-clock">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/countdown-timer/">Countdown Timer</a></li>
-                    <ul>
-                        <li>
-                        Created a timer that counts down to a user-inputted date and time. The display counts down in 
-                        units of years, days, hours, minutes, and seconds. When that date and time is reached, the display reads 
-                        "DONE!!!" and a "reset" button appears to allow the user to initiate a new countdown.
-                        </li>
-                        <li><a href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/countdown-timer.md">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/countdown-timer">GitHub Repo</a></li>
-                    </ul>
-                    <li><a href="https://robbiegay.github.io/mind-reader/">Mind Reader</a></li>
-                    <ul>
-                        <li>
-                        This program can read your mind!! Seriously, try it out. The computer will guide you 
-                        through a series of 4 questions and will then be able to tell you the symbol you were 
-                        thinking of. Uses some sort of cutting-edge Bluetooth waves to read your mind (or something 
-                        like that..)
-                        </li>
-                        <li><a href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/mind-reader.md">Project Prompt</a></li>
-                        <li><a href="https://github.com/robbiegay/mind-reader">GitHub Repo</a></li>
-                    </ul>
-                </ul>
-            </ul>
-        </article>
-        
-    </body>
 </html>
 
 
-<!-- Would love to make it so that the sub-bullits under each prject were collapsable -->
+
+<!-- Accordion Template -->
+<!-- Remember to change the id names -->
+
+<!--
+<div class="accordion" id="projects">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    -->
+<!-- Week goes here -->
+<!--
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+            data-parent="#projects">
+            <div class="card-body">
+                -->
+<!-- Projects list goes here -->
+<!--
+            </div>
+        </div>
+    </div>-->
