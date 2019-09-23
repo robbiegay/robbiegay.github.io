@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
 
 <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Robbie's Bootcamp Blog Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 </head>
@@ -49,37 +50,49 @@
             <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 
+                <!-- Heading -->
                 <heading>
-                    <h1 class="mt-5 py-5 text-center">Blog Homepage</h1>
+                    <h1 class="mt-5 py-5 text-center">Title: subtitle</h1>
+
+                    <!-- Author Card -->
+                    <div class="card" style="max-width: 350px;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="../assets/img/robbie-gay-cropped.jpg" class="card-img"
+                                    alt="Image of Robbie Gay">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Robbie Gay</h5>
+
+                                    <!-- Update date -->
+                                    <p class="card-text"><time datetime="2019-09-07">September 13<sup>th</sup>,
+                                            2019</time></p>
+
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </heading>
 
+                <!-- Main Text -->
                 <article class="text-justify">
+
+                    <h3 class="text-center">Heading</h3>
                     <p>
-                        Welcome to my blog! Currently, I will be using this space to
-                        post updates as I navigate through Awesome Inc U's
-                        <a href="https://www.awesomeincu.com/bootcamp/" title="Awesome Inc U's Web Dev Bootcamp">Fall
-                            2019 Web
-                            Developer Bootcamp</a>. You can check out my previous
-                        <a href="../posts.html">posts</a>,
-                        <a href="../projects.html">projects</a>, or various other
-                        content by using the Nav Bar above. Or below, you
-                        can play a simple drawing game that I created!
+                        Content
                     </p>
-                    <h3 class="text-center">Rainbow Sketchpad Game</h3>
-                    <div class="border embed-responsive embed-responsive-4by3 mb-4">
-                        <iframe class="embed-responsive-item" title="Rainbow Sketchpad" height="515"
-                            src="https://robbiegay.github.io/rainbow-sketchpad/">
-                        </iframe>
-                    </div>
-                    <p>
-                        Instructions: Use your mouse to draw rainbow-colored lines! Click anywhere
-                        in the game to reset (delete) your drawing. You can also check out
-                        the code for this project on
-                        <a href="https://github.com/robbiegay/rainbow-sketchpad"
-                            title="Rainbow Sketchpad Github Repo">Github</a>.
-                        (Note: Likely
-                        will not work on mobile or touchscreens.)
-                    </p>
+
+                    <!-- <figure class="figure">
+                        <img class="img-fluid" src="[Src]" alt="[Alt]">
+                        <figcaption class="figure-caption text-center">Caption</figcaption>
+                    </figure> -->
+
+
+                    <!-- White space -->
+                    <br><br><br><br><br><br><br><br>
 
                 </article>
             </div>
@@ -95,7 +108,6 @@
         </nav>
     </footer>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -107,7 +119,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
