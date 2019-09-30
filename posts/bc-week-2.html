@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <title>Bootcamp Week 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank"
+                        href="https://www.linkedin.com/in/robbie-gay-3a38aa72/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <heading>
+                    <h1 class="mt-5 py-5 text-center">Bootcamp Week 2: JavaScript Projects</h1>
+
+                    <!-- Author Card -->
+                    <div class="card" style="max-width: 350px;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="../assets/img/robbie-gay-cropped.jpg" class="card-img"
+                                    alt="Image of Robbie Gay">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Robbie Gay</h5>
+                                    <p class="card-text"><time datetime="2019-09-29">September 29<sup>th</sup>,
+                                            2019</time></p>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </heading>
+
+                <!-- Main Text -->
+                <article class="text-justify">
+
+                    <p>
+                        Bootcamp Week 2 was mostly project based. I worked on
+                        three projects this week: a Weather App, a Tic-Tac-Toe
+                        game, and a Calculator. Each of these projects was built
+                        using JavaScript, and each helped introduce us to some
+                        new aspect of the language.
+                    </p>
+
+                    <h3>This Week’s Projects</h3>
+
+                    <p>
+                        <a href="https://robbiegay.github.io/weather-app/" title="My Weather App">The Weather App</a> 
+                        was designed to take a user-inputted zip-code, and output 
+                        real-time weather conditions for that area. This project 
+                        introduced us to APIs and JSON. APIs are Application 
+                        Programming Interfaces, sets of code governing access 
+                        points to a servers or databases. JSON stands for JavaScript 
+                        Object Notation, and is a standardized data format. We used the 
+                        <a href="https://openweathermap.org/api" title="openweathermap API">openweathermap API</a> 
+                        for this project, and received data from that API in the JSON format. 
+                    </p>
+
+                    <p>
+                        The <a href="https://robbiegay.github.io/tic-tac-toe/" title="My Tic-Tac-Toe game">Tic-Tac-Toe game</a> 
+                        involved testing a set of 8 win conditions against the 
+                        current X and O positions on the Tic-Tac-Toe board. 
+                        To solve this, I created a nested array with the various 
+                        win conditions, and tested them against the current state 
+                        of the board (also in an array). This test was run upon 
+                        each firing of the click event handler.
+                    </p>
+
+                    <p>
+                        The <a href="https://robbiegay.github.io/calculator/" title="My Calculator App">Calculator</a> 
+                        project involved building a basic calculator that could use
+                         +, -, /, x on user-inputted numbers. This project seemed pretty 
+                         straight forward at first — computers should be pretty good 
+                         at adding, subtracting, dividing, and multiplying. The problem, 
+                         however, lay in the fact that there are a multitude of 
+                         combinations for which the user could input values. What 
+                         happens if the user presses:  + 5 6 - / 3 =? Should the computer 
+                         ignore the opening two operands? 5 and 6 pressed sequentially 
+                         should obviously form “56”. And what about the “- /“? Should 
+                         the computer ignore the first operand in this case as well?
+                    </p>
+
+                    <p>
+                        There were many edge cases, and on my first attempt at creating 
+                        the calculator, I tried to solve all of these scenarios from 
+                        the beginning. This resulted in a somewhat functioning calculator, 
+                        but at the expense of running some very convoluted code behind 
+                        the scenes. I decided to start fresh and create a second JS sheet, 
+                        and to focus on just solving core problems first. After I had 
+                        some fairly clean code that worked well, I then began to 
+                        incrementally add edge case solutions.
+                    </p>
+
+                    <p>
+                        In addition, the Calculator was my first time dynamically 
+                        rendering an application in JavaScript. The body of my HTML 
+                        document only contains a single &lt;div&gt; element for the 
+                        JavaScript to build the app on.
+                    </p>
+
+                    <h3>Process</h3>
+
+                    <p>
+                        My biggest take away from Bootcamp Week 2 was that I started 
+                        to think about and establish a personal development process.
+                    </p>
+
+                    <p>
+                        My first step is to read over the project parameters, and to 
+                        Pseudo Code the problem. I will draw out the potential UI, 
+                        thinking about how various elements will scale at different 
+                        screen sizes, as well as what elements are clickable and how 
+                        various elements should interact. I will also work on the 
+                        code as well — mapping out ideas relating to how I think 
+                        the problem could be solved.
+                    </p>
+
+                    <p>
+                        I will then usually go ahead and build my UI. This gives me 
+                        something to work with and test code on. If you need to 
+                        test what happens when a button gets pressed, it’s pretty 
+                        hard to do so if you haven’t built any buttons!
+                    </p>
+
+                    <p>
+                        My next step is to build the core functionality of the project. 
+                        This MVP will fulfill the broad requirements for functionality, 
+                        while leaving edge cases to a latter step. Throughout this 
+                        process, I will likely come up with ideas for new features, 
+                        or think of possible edge case problems. In order to not get 
+                        sidetracked, I will jot down these ideas on a pad of paper.
+                    </p>
+
+                    <p>
+                        Once I get the core functionality working, I will then begin 
+                        solving for edge cases. <a href="http://ianrios.me/" title="Ian's Website">Ian</a> 
+                        recommended that I prioritize edge cases by using a four-quadrant 
+                        grid. The grid compares Important and Non-Important vs. 
+                        Urgent and Less-Urgent. This allowed me to tackle edge 
+                        cases with a certain hierarchy.
+                    </p>
+
+                    <figure class="figure">
+                        <img class="img-fluid" src="" alt="">
+                        <figcaption class="figure-caption text-center">Caption</figcaption>
+                    </figure>
+
+                    <p>
+                        Working within this developmental framework helped me 
+                        write more efficient code, in a more timely manner!
+                    </p>
+
+                    <h3>Looking Forward</h3>
+
+                    <p>
+                        In Bootcamp Week 3, we will be tackling a 
+                        <a href="https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/sliding-puzzle.md" title="Sliding Puzzle Project Prompt">Sliding Puzzle project</a> 
+                        — involving moving pieces around a board each 
+                        time a user clicks. This project seems pretty 
+                        intimidating right now, but I believe that we 
+                        will be learning some new concepts that will 
+                        greatly help with this project!
+                    </p>
+
+                    <!-- White space -->
+                    <br><br><br><br><br><br><br><br>
+
+                </article>
+            </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
+        </nav>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
