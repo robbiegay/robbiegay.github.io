@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <title>Bootcamp Week 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/robbiegay/">LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">Bio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <heading>
+                    <h1 class="mt-5 py-5 text-center">Bootcamp Week 6: More React, A Halfway Point</h1>
+
+                    <!-- Author Card -->
+                    <div class="card" style="max-width: 350px;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="../assets/img/robbie-gay-cropped.jpg" class="card-img"
+                                    alt="Image of Robbie Gay">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Robbie Gay</h5>
+
+                                    <!-- Update date -->
+                                    <p class="card-text"><time datetime="2019-10-26">October 26<sup>th</sup>,
+                                            2019</time></p>
+
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </heading>
+
+                <!-- Main Text -->
+                <article class="text-justify">
+
+                    <h3 class="text-center">Weekly Update</h3>
+
+                    <p>
+                        Week 6 of the Bootcamp was pretty fun! 
+                        <a href="https://wildercat.github.io/" title="Abram's Blog">Abram</a> 
+                        brought in his GameCube and we played some lunchtime 
+                        <a href="https://en.wikipedia.org/wiki/Super_Smash_Bros._Melee" title="Wikipedia Page">Melee</a>. 
+                        Todd showed us his favorite game — 
+                        <a href="https://en.wikipedia.org/wiki/Super_Monkey_Ball_(video_game)" title="Wikipedia Page">Monkey Ball</a> — 
+                        it was pretty fun but I was not very good at it. On Thursday, Anna and I carved a pumpkin! Warning: 
+                        very spooky pic of said pumpkin below. On Friday, Awesome Inc held their monthly Family Lunch. 
+                        They brought in Pasta and Salad from <a href="https://www.puccinissmilingteeth.com/">Puccini’s</a> and all those who work out of the Awesome Inc 
+                        space shared a meal! I was already a huge Puccini's pizza fan — now I’m a lover of their 
+                        lasagna as well!
+                    </p>
+
+                    <!-- Carousel Images -->
+                    <div id="weeklyUpdate" class="carousel slide mx-5 mb-4" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#weeklyUpdate" data-slide-to="0" class="active"></li>
+                                <li data-target="#weeklyUpdate" data-slide-to="1"></li>
+                                <li data-target="#weeklyUpdate" data-slide-to="2"></li>
+                                <li data-target="#weeklyUpdate" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../assets/img/bootcamp-melee.jpg"
+                                        alt="Playing some Melee">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="d-inline-flex px-2">Some Bootcampers playing GameCube (L-R: Taylor, Abram, Myself, and Will)</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../assets/img/carving-pumpkin.JPG"
+                                        alt="A pic of pumpkin carving">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="d-inline-flex px-2">Anna carving the eyes</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../assets/img/glowing-pumpkin.JPG"
+                                        alt="A glowing pumpkin">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="d-inline-flex px-2">Very spooky!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="../assets/img/family-lunch-oct-2019.JPG"
+                                        alt="Puccini’s Pasta">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p class="d-inline-flex px-2">Family lunch — Puccini's Pasta and Salad!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#weeklyUpdate" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#weeklyUpdate" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    <h3 class="text-center">A Halfway Point</h3>
+
+                    <p>
+                        This Friday marked the halfway point of the Bootcamp. It is a 
+                        little wild that the course has flown by so quickly. 
+                        At the same time, as we started to refactor some of our earlier projects 
+                        this week, I realized just how much ground we have covered in such a short period of time. 
+                        I’m having a lot of fun in the Bootcamp, so it is a little bittersweet to 
+                        think that the rest of the Bootcamp might fly by as well. I am very excited, however, to 
+                        graduate and pursue a job in Lexington’s Tech scene!
+                    </p>
+
+                    <h3 class="text-center">React Reflection</h3>
+
+                    <p>
+                        As I wrote in <a href="https://robbiegay.github.io/posts/bc-week-5.html">last week’s blog post</a>, 
+                        I initially struggled with understanding React. It took me most of week 5 before I even 
+                        felt like I was gaining any traction. Last weekend, I got a full night's sleep 
+                        and spent part of Sunday re-reading the <a href="https://reactjs.org/docs/getting-started.html">React documentation</a>. 
+                        This week, I worked through the <a href="https://reactjs.org/tutorial/tutorial.html">React tutorial</a> 
+                        for the second time, and read through the documentation 
+                        a third. Each time through, I would make it further and further before my comprehension 
+                        level would start to drop. By the end of the week, I was starting to feel well 
+                        versed in the basics of React — just in time to switch gears and start learning 
+                        MySQL and PHP. &#128579;
+                    </p>
+
+                    <h3 class="text-center">Next Week: Back End Development</h3>
+
+                    <p>
+                        Next week we will start working with Back End languages. Up until this point, we have 
+                        been working with Front End languages and frameworks. Front End development 
+                        is more client side focused and deals with design and user interfaces. Back End development involves 
+                        working with servers and doing more behind-the-scenes work. Additionally, being able to do 
+                        both Front End and Back End development is what makes someone a Full Stack Developer!                           
+                    </p>
+
+                    <p>
+                        We will start Back End work by learning <a href="https://www.php.net/">PHP</a> 
+                        and <a href="https://www.mysql.com/">MySQL</a>. We got a bit of an introduction to 
+                        these languages with our morning Warm-ups this week. 
+                        <a href="https://jmstewart00.github.io/" title="Josh's Website">Josh</a> turned us 
+                        loose with some <a href="https://www.hackerrank.com/">HackerRanks</a> on PHP and MySQL. 
+                        Both were challenging at first, but it seems that we have become pretty good Google’ers 
+                        as we were able to pull up documentation and figure out methods to solve the problems fairly quickly!
+                    </p>
+
+                    <h3 class="text-center">Keyboard Shortcuts</h3>
+
+                    <p>
+                        After using <a href="https://code.visualstudio.com/" title="VS Code Website">VS Code</a> 
+                        daily for several weeks, I decided that today it was time to learn some useful shortcuts 
+                        for the software. I listed below some of the useful shortcuts that I found:
+                        
+                    </p>
+
+                    <ul>
+                        <li>
+                            <kbd>⌥</kbd> + <kbd>click</kbd> --> Add cursor
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>C</kbd> OR <kbd>⌘</kbd> + <kbd>X</kbd> (empty selection) --> Copy or Cut entire line
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>L</kbd> --> Select current line
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>L</kbd> --> Add to current selection 
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>&larr; OR &rarr;</kbd> --> Move to beginning or end of line
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>&larr; OR &rarr;</kbd> --> Move to left or right editor
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>S</kbd> --> Save all
+                        </li>
+                        <li>
+                            <kbd>shift</kbd> + <kbd>⌥</kbd> + <kbd>F</kbd> --> Format document
+                        </li>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>B</kbd> --> Toggle sidebar visibility
+                        </li>
+                    </ul>
+
+                    <p>
+                        Finally, a somewhat unusual shortcut that I found was for something called Zen Mode. 
+                        Similar to Focus Mode in Microsoft Word, it minimizes distracting elements of the screen, 
+                        allowing you to focus on the act of coding:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <kbd>⌘</kbd> + <kbd>K</kbd> then press <kbd>Z</kbd> --> Zen Mode ( <kbd>esc</kbd> <kbd>esc</kbd> (twice) to exit)
+                        </li>
+                    </ul>
+
+                    <!-- White space -->
+                    <br><br><br><br><br><br><br><br>
+
+                </article>
+            </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
+        </nav>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
