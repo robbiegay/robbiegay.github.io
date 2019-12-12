@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <title>Bootcamp Week 12</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+        <!-- Name, links to "home" -->
+        <a href="../index.html" class="navbar-brand my-0 mr-2">Robbie Gay</a>
+        <!-- Hamburger Menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Bar -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../posts.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/robbiegay">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/robbiegay/">LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">Bio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Creates container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+                <!-- Heading -->
+                <heading>
+                    <h1 class="mt-5 py-5 text-center">Bootcamp Week 12: Demo Day</h1>
+
+                    <!-- Author Card -->
+                    <div class="card" style="max-width: 350px;">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <img src="../assets/img/robbie-gay-cropped.jpg" class="card-img"
+                                    alt="Image of Robbie Gay">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Robbie Gay</h5>
+
+                                    <!-- Update date -->
+                                    <p class="card-text"><time datetime="2019-12-07">December 7<sup>th</sup>,
+                                            2019</time></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </heading>
+
+                <!-- Main Text -->
+                <article class="text-justify">
+
+                    <p>
+                        Demo day! After 4 weeks of prework and 12 weeks of full-time Bootcamp,
+                        everything culminated in the presentation of our final projects on Demo Day!
+                    </p>
+
+                    <figure class="figure">
+                        <img class="img-fluid" src="../assets/img/demo-day-audience-my-speech.jpg"
+                            alt="Robbie presenting MPM2">
+                        <figcaption class="figure-caption text-center">
+                            Yours truly giving his presentation at Demo Day
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Our final week was structured like this:
+                        <ol>
+                            <li>
+                                <span class="text-danger">Monday & Tuesday</span>: Final days of coding.
+                            </li>
+                            <li>
+                                <span class="text-warning">Wednesday</span>: 10:30am code freeze. Work on README's and
+                                prepare Demo Day presentations.
+                            </li>
+                            <li>
+                                <span class="text-success">Thursday</span>: Final dress rehearsal in the morning. Demo
+                                Day reception at 11:30am.
+                                Introductory speeches at Noon. Open house until 1pm.
+                            </li>
+                            <li>
+                                <span class="text-primary">Friday</span>: Retro and feedback. 
+                                <a href="https://breakoutgames.com/lexington" title="Breakout Games Website">Breakout Games</a>
+                                after lunch. Evening:
+                                Bootcamp Graduation party at 
+                                <a href="https://newtonsattic.com/index.php" title="Newton's Attic Website">Newton's Attic</a>.
+                            </li>
+                        </ol>
+                    </p>
+
+                    <h3>Final Days of Coding</h3>
+
+                    <p>
+                        Monday and Tuesday were our final days of coding. The stress levels in the room seemed
+                        noticeably lower than at the end of week 11. At the end of week 11, many of us were still trying
+                        to implement new stories, and the time crunch was bearing down on us. By Monday of week 12, if
+                        we had not yet started a new story, it was likely that that story would now be pushed to a future
+                        sprint. We were now in the process of polishing up our code and making small improvements.
+                    </p>
+
+                    <p>
+                        Most of my major stories got wrapped up the previous Friday. The final major story that I was
+                        attempting to implement was a timer function to kick inactive users out of the queue. I got 
+                        about halfway done Monday evening before determining that this was unlikely to get done this
+                        sprint, and added it to my features list for next sprint!
+                    </p>
+
+                    <p>
+                        On Tuesday, I set about tackling my Google Cloud hosting problem. For some reason, Google Cloud
+                        did not like the fact that I used both React and Laravel in one project file. After attempting to
+                        debug this with both Justin and Ian, and with time now running dangerously low, I decided that this
+                        build would have to be run locally, and went about to process of hosting my app from my IP address. 
+                        Once I got my site hosted locally 
+                        (I implemented it fully sometime Tuesday afternoon), I spent my remaining time testing for bugs
+                        and bringing my code up to production standards.
+                    </p>
+
+                    <h3>Demo Day Prep</h3>
+
+                    <p>
+                        Our code freeze was at 10:30am Wednesday morning. Now that I had a demo-able project, I set about
+                        writing a blog post for the week and a <a>README</a> for MPM<sup>2</sup>. I then began
+                        drafting my speech for our two-minute introduction presentations. We did several rehearsals — and 
+                        critiques — on Wednesday, and a final dress rehearsal on Thursday morning.
+                    </p>
+
+                    <h3>Demo Day</h3>
+
+                    <p>
+                        Around 10am, we went down and began setting up our booths. I borrowed some external speakers to
+                        play my
+                        synth sounds, and set up an external monitor for the visuals. I found that, although the app
+                        worked locally
+                        and could be run on a user's phone, it was much more stable on desktop versions. As such, Ian
+                        offered to let
+                        me use his laptop to demo the user experience. On Ian's laptop, user's could control the various 
+                        synth and visual parameters. On my laptop, I had the source code and MySQL database, as
+                        well as my blog
+                        and LinkedIn pages available for user's to peruse. I also set up a contact sheet, laid out some resumes, and
+                        posted my name on the table!
+                    </p>
+
+                    <figure class="figure">
+                        <img class="img-fluid" src="../assets/img/demo-day-booth.JPG" alt="MPM2 Demo Day Booth">
+                        <figcaption class="figure-caption text-center">Ready for Demo Day!</figcaption>
+                    </figure>
+
+                    <p>
+                        Around 11:30am, the guests started to arrive! We then mingled and talked with friends and family
+                        for
+                        about 30 minutes. Waiting was making me a little anxious, so I was glad when the instructors
+                        began
+                        their presentations around noon. Nick, Justin, and Ian all talked about the Bootcamp and 
+                        our final project development process. After they got done speaking, we each had two minutes to
+                        introduce ourselves and to talk about our projects.
+                    </p>
+
+                    <!-- Carousel Images -->
+                    <div id="demoDayPresentations" class="carousel slide mx-5 mb-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#demoDayPresentations" data-slide-to="0" class="active"></li>
+                            <li data-target="#demoDayPresentations" data-slide-to="1"></li>
+                            <li data-target="#demoDayPresentations" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../assets/img/demo-day-instructors.JPG"
+                                    alt="Justin, Ian, and Josh">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="d-inline-flex px-2 bg-dark rounded">Lead instructor Justin talking about
+                                        the Bootcamp</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../assets/img/demo-day-audience-2.jpg"
+                                    alt="Demo Day Audience">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="d-inline-flex px-2 bg-dark rounded">The audience — ready for some Demo Day
+                                        fun!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../assets/img/demo-day-robbie-presenting.jpg"
+                                    alt="My presentation speech">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="d-inline-flex px-2 bg-dark rounded">Explaining MPM2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demoDayPresentations" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#demoDayPresentations" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <p>
+                        For my presentation, I talked about my background in 
+                        <a href="spotify:album:3izLLRwlc66KiLs3M6P4wk" title="My single 'Wake'">music making</a>, my intention of
+                        combining this passion with our tech stack for the final project, and finally how
+                        MPM<sup>2</sup> worked.
+                        I even had two jokes planned for my speech — one about how I cut off all my long hair, and
+                        another about
+                        the value of my project (none — it's art). They were both received well — but don't worry, no
+                        plans to
+                        go into stand up comedy anytime soon.
+                    </p>
+
+                    <!-- Carousel Images -->
+                    <div id="demoDayBooth" class="carousel slide mx-5 mb-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#demoDayBooth" data-slide-to="0" class="active"></li>
+                            <li data-target="#demoDayBooth" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../assets/img/demo-day-booth-talking.jpg"
+                                    alt="Talking at my Demo Day booth">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="d-inline-flex px-2 bg-dark rounded">Talking with Wendy Trivisonno about MPM2</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../assets/img/demo-day-fans.JPG" alt="Demo day booth">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="d-inline-flex px-2">My Demo Day fans — Back L-R: Martha, Judi, Bob, Jon
+                                        Front: Anna</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demoDayBooth" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#demoDayBooth" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <p>
+                        After presenting, we had about an hour of open booths. I got to showcase MPM<sup>2</sup> to
+                        several groups of people, and many of them managed to make some rather interesting sounds and visuals! 
+                        It was really fun getting to talk about a project that had consumed so much of my time for the last 3 weeks. 
+                        I also got some really interesting feedback and advice on where to take the project next!
+                    </p>
+
+                    <h3>Post Demo Day</h3>
+
+                    <p>
+                        After Demo Day wrapped up, we all went across the street to
+                        <a href="https://www.eastendtapandtable.com/" title="EE T&T Website">East End Tap and Table</a>
+                        for a celebratory meal. Still staying true to my new Pescetarian lifestyle, I ordered the
+                        tofu siam-wich. It was really good!
+                    </p>
+
+                    <figure class="figure">
+                        <img class="img-fluid" src="../assets/img/demo-day-food.JPG" alt="My food">
+                        <figcaption class="figure-caption text-center">Tofu siam-wich at East End Tap and Table</figcaption>
+                    </figure>
+
+                    <p>
+                        It feels a little strange that the Bootcamp is over. At the start, 16 weeks seemed
+                        like a really long time — yet it mostly flew by. I really enjoyed the projects we
+                        worked on, and the occasional ping pong or melee match definitely added to the overall fun. I'm
+                        really excited to continue updating this blog, and to keep you in the loop as I kick my job hunt
+                        into high gear!
+                    </p>
+
+                    <!-- White space -->
+                    <br><br><br><br><br><br><br><br>
+
+                </article>
+            </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-secondary mt-5">
+            <span class="navbar-text">
+                <em>&copy; 2019 Robbie Gay. All rights reserved</em>
+            </span>
+        </nav>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
